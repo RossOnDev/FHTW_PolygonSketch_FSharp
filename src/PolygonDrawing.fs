@@ -78,7 +78,6 @@ let updateModel (msg: Msg) (model: Model) =
                 { model with
                     currentPolygon = Some(pos :: polyLine) }
             | _ ->
-                Browser.Dom.console.log ("Uncaught")
                 model
 
         newModel
@@ -95,7 +94,6 @@ let updateModel (msg: Msg) (model: Model) =
         newModel
 
     | _ ->
-        Browser.Dom.console.log ("Uncaught")
         model
 
 
